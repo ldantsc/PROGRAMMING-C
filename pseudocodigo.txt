@@ -1,0 +1,46 @@
+\\Uma pizzaria o procurou, pois gostaria de automatizar seu caixa. 
+A princípio, foi lhe solicitado apenas implementar um cálculo simples, 
+em que, dado o valor total da conta de uma mesa, o programa divide esse 
+valor pela quantidade de integrantes da mesa e calcula o desconto concedido. 
+O programa deve receber como dados o valor da conta, a quantidade de pessoas e 
+o percentual de desconto (%). Com os dados no programa, como deverá ser feito o cálculo
+ do valor total da conta com o desconto e o valor que cada pessoa deverá pagar?
+
+
+.algoritmo "Calculo de Desconto"
+
+.var
+
+int qntmesa, percdesconto;
+float valormesa,pagindividual, descont, total;
+
+.inicio
+
+Escreva("Quantidade de pessoas na mesa");
+  Ler(qntmesa);
+ 
+Escreva("Valor total da conta");
+  Ler(valormesa);
+
+Escreva("Digite o percentual de desconto");
+  Ler (percdescont);
+
+  
+ descont = (valormesa*percdesconto)/100;
+ total = valormesa - descont;
+ pagindiviual = total/qntmesa;
+
+   
+   Escreva("O seu desconto é de % - Valor total com desconto: %:", descont, total);
+   Escreva("E cada pessoa deve pagar:", pagindividual);
+ 
+  Fim-se
+
+
+.fimdoalgoritmo
+
+
+
+3 pessoas
+12,50 valor total
+12% desconto
